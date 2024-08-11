@@ -9,13 +9,13 @@ export default function Footer() {
                 <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="/">Home</Link>
             </li>
             <li>
-                <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="#services">Services</Link>
+                <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="/#services">Services</Link>
             </li>
             <li>
-                <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="#gallery">Gallery</Link>
+                <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="/#gallery">Gallery</Link>
             </li>
             <li className=''>
-                <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="#contact">Contact</Link>
+                <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="/contact">Contact</Link>
             </li>
             <li className='col-span-2 lg:col-span-1'>
                 <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="/about">About</Link>

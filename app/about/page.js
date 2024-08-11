@@ -5,8 +5,9 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 export default function Page() {
   return (
-    <motion.div className="lg:py-32 h-full w-full">
-      <Card className="my-24 mb-12 md:w-2/3 lg:w-1/3 mx-4 shadow-md shadow-black/20 md:mx-auto bg-gradient-to-br from-white/30 to-neutral-400/30 backdrop-blur-sm">
+    <motion.div className="lg:py-24 h-full w-full">
+                  <h2 className="lg:text-4xl lg:w-1/3 text-center mx-auto">About Ignite Property Services</h2>
+      <Card className="my-12 md:w-2/3 lg:w-1/3 mx-4 shadow-md shadow-black/20 md:mx-auto bg-gradient-to-br from-white/30 to-neutral-400/30 backdrop-blur-sm">
         <Image src={SRC} alt="Ignite Property Services" className="max-w-[15rem] mx-auto p-4" />
         <CardContent className="py-4 px-8">
           <motion.div className="font-md text-slate-800 text-center">
