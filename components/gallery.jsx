@@ -1,6 +1,5 @@
 "use client"
 import { useRef } from 'react'
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -16,7 +15,7 @@ export default function Gallery() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
   return (
-    <div className=''>
+    <div className='w-[80%] mx-auto'>
 
       <Carousel
         plugins={[plugin.current]}
@@ -24,20 +23,18 @@ export default function Gallery() {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-          <Card className="p-2">
-        <CarouselContent className="w-full min-h-[2/5] rounded-md ">
+        <CarouselContent className="w-full  rounded-md ">
 
             {pictures.map((p, index) => {
               return <CarouselItem key={index}>
-                {p.type === 'img' ? <Image src={p.src} className='aspect-video object-cover rounded-md w-full' /> :
-                  <video src={p.src} controls muted className='w-full' />
+                {p.type === 'img' ? <Image src={p.src} className='h-96 w-96 lg:min-w-[900px] lg:h-[800px] object-cover rounded-md px-auto' alt={p.alt}  /> :
+                  <video src={p.src} controls muted className='h-96 w-96 lg:min-w-[900px] lg:h-[800px] object-cover rounded-md px-auto' />
                 }
               </CarouselItem>
             })}
         </CarouselContent>
-          </Card>
-        <CarouselPrevious className="scale-150" />
-        <CarouselNext className="scale-150" />
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </div>
   )

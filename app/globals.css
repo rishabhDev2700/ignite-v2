@@ -75,4 +75,7 @@
   section{
     @apply p-4
   }
+  div{
+    @apply font-light text-lg 
+  }
 }

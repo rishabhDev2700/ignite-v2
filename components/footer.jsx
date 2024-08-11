@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='bg-cyan-950 text-white py-8'>
+    <footer className='bg-neutral-900 text-white pb-12 pt-8'>
         <ul className='grid  grid-cols-2 lg:grid-cols-5 lg:place-content-center gap-y-4 text-center mx-auto w-4/5 p-2'>
             <li>
                 <Link className='p-2 mx-3 my-2 border-b border-transparent hover:border-white duration-200' href="/">Home</Link>

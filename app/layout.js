@@ -1,8 +1,8 @@
-import { Oswald } from "next/font/google";
+import { Oswald, Urbanist } from "next/font/google";
 import "./globals.css";
-
-const inter = Oswald({ subsets: ["latin"] });
-
+import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
+const urbanist = Urbanist({subsets:["latin"]})
 export const metadata = {
   title: "Ignite Property Services",
   description: "Commercial Power Cleaning Services",
@@ -10,8 +10,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={urbanist.className}>
+      <NavBar />
+      {children}
+      <Footer />
+
+      </body>
     </html>
   );
 }
